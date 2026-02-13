@@ -2,7 +2,7 @@
 
 Professional FastAPI backend for sentiment analysis using DistilBERT transformer model.
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Python 3.8+
@@ -71,7 +71,7 @@ uvicorn app:app --host 0.0.0.0 --port 8000 --reload
 
 The server will start at `http://localhost:8000`
 
-## 📚 API Documentation
+## API Documentation
 
 Once the server is running, access the interactive API documentation:
 
@@ -166,7 +166,7 @@ backend/
 └── README.md                     # This file
 ```
 
-## 🧪 Testing
+## Testing
 
 ### Using the Test Client
 ```bash
@@ -226,14 +226,14 @@ print(response.json())
 - **Problem**: Getting 429 errors
 - **Solution**: Disable rate limiting by setting `RATE_LIMIT_ENABLED=false` in `.env`
 
-## 📊 Performance
+## Performance
 
 - **Model**: DistilBERT (66M parameters)
 - **Inference Time**: <100ms per request (GPU), ~200-500ms (CPU)
 - **Memory Usage**: ~250MB GPU / ~500MB RAM
 - **Throughput**: 10-50 requests/second (depending on hardware)
 
-## 🔒 Production Deployment
+## Production Deployment
 
 For production deployment:
 
@@ -263,14 +263,14 @@ For production deployment:
 
 6. **Enable HTTPS** with SSL certificates
 
-## 📝 Logging
+## Logging
 
 Logs are automatically saved to the `logs/` directory with daily rotation:
 - File: `logs/sentiment_api_YYYYMMDD.log`
 - Format: Timestamp - Logger - Level - Message
 - Includes request/response logging with timing
 
-## 🤝 Contributing
+## Contributing
 
 This is a professional implementation showcasing:
 - Clean architecture with separation of concerns

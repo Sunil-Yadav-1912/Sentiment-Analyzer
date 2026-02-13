@@ -17,13 +17,13 @@ Here is a visual representation of how the project is structured and how data fl
 
 ```mermaid
 graph TD
-    User[👤 User] -->|Types Text| FE[💻 Frontend (React)]
-    FE -->|Sends API Request| BE[⚙️ Backend (FastAPI)]
+    User[👤 User] -->|Types Text| FE[💻 Frontend React]
+    FE -->|Sends API Request| BE[⚙️ Backend FastAPI]
     
-    subgraph Backend Logic
+    subgraph BackendLogic["Backend Logic"]
         BE -->|Preprocess Text| MM[🧠 Model Manager]
         MM -->|Predict| AI[🤖 DistilBERT Model]
-        AI -->|Result (Positive/Negative)| BE
+        AI -->|Result Positive/Negative| BE
     end
     
     BE -->|JSON Response| FE
